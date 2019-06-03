@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="270" id="GX0-YJ-dXH" customClass="AcceptShipMapCell" customModule="FreightrollMobile" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GX0-YJ-dXH" id="SRA-GR-rb5">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="269.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OQ6-KL-jNy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="269.5"/>
+                    </mapView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAQ-e3-hpd">
+                        <rect key="frame" x="0.0" y="125" width="375" height="144"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OQ6-KL-jNy" firstAttribute="leading" secondItem="SRA-GR-rb5" secondAttribute="leading" id="2vP-ad-e0D"/>
+                    <constraint firstAttribute="bottom" secondItem="OQ6-KL-jNy" secondAttribute="bottom" id="Yzn-GF-rnD"/>
+                    <constraint firstItem="DAQ-e3-hpd" firstAttribute="leading" secondItem="OQ6-KL-jNy" secondAttribute="leading" id="a9v-90-cIR"/>
+                    <constraint firstItem="DAQ-e3-hpd" firstAttribute="top" secondItem="OQ6-KL-jNy" secondAttribute="top" constant="125" id="adf-rR-qAQ"/>
+                    <constraint firstItem="OQ6-KL-jNy" firstAttribute="top" secondItem="SRA-GR-rb5" secondAttribute="top" id="fUX-Qw-Sie"/>
+                    <constraint firstItem="DAQ-e3-hpd" firstAttribute="height" secondItem="OQ6-KL-jNy" secondAttribute="height" constant="-125.5" id="irB-g5-oPn"/>
+                    <constraint firstItem="DAQ-e3-hpd" firstAttribute="width" secondItem="OQ6-KL-jNy" secondAttribute="width" id="s0s-Jl-ZMu"/>
+                    <constraint firstAttribute="trailing" secondItem="OQ6-KL-jNy" secondAttribute="trailing" id="y5S-ub-Xqy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gradientView" destination="DAQ-e3-hpd" id="e8V-ZN-wDZ"/>
+                <outlet property="mapView" destination="OQ6-KL-jNy" id="B4b-5T-Rcj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

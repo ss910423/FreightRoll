@@ -1,0 +1,6 @@
+framework module Pods_FreightrollMobile {
+  umbrella header "Pods-FreightrollMobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
